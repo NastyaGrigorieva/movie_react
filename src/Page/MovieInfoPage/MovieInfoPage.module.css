@@ -1,0 +1,21 @@
+.MovieInfoPage {
+    display: flex;
+    column-gap: 25px;
+    padding: 35px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.MovieInfoPage img {
+    width: 300px;
+}
+
+.buttonBack {
+    padding: 5px 10px;
+    margin: 10px 25px;
+    cursor: pointer;
+}

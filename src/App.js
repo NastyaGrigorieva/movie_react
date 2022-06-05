@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Navigate, Route, Routes} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import "./App.css";
+import {Layout} from "./Layouts/Layouts"
+import {MoviesCard} from "./Components";
+import {MoviesPage, MovieSearchPage, GenresPage,MovieInfoPage} from "./Page";
+
+const App = () => {
+    return (
+        <div className={'flex'}>
+            <Routes>
+                <Route path={'/'} element={<Layout/>}>
+                    <Route index element={<Navigate to={'/movies'}/>}/>
+                    <Route path={'search'} element={<MovieSearchPage/>}/>
+                    <Route path={'movies'} element={<MoviesPage/>}/>
+                    <Route path={'movies/:id'} element={<MovieInfoPage/>}/>
+                    <Route path={'genres/:id'} element={<GenresPage/>}/>
+                    <Route path={'genre/:id'} element={<MoviesCard/>}/>
+                </Route>
+            </Routes>
+        </div>
+    );
+};
 
 export default App;
