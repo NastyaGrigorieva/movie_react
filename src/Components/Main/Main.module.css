@@ -6,6 +6,6 @@
 }
 
 .main.dark {
-    background-color: black;
-    color: white;
+    background-color: rgba(35, 19, 22, 0.93);
+    color: rgba(248, 221, 164, 0.93);
 }

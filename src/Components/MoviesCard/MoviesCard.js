@@ -7,7 +7,7 @@ import { getGenreMovies} from "../../store";
 
 const MoviesCard = () => {
     const {id} = useParams();
-    const {genre} = useSelector(state => state.genres);
+    const {genre} = useSelector(state => state.genre);
     const dispatch = useDispatch();
 
     useEffect(() => {

@@ -1,22 +1,22 @@
 .Container {
-    width: 20%;
-    background-color: #46b486;
+    width:35%;
+    background-color: rgba(185, 142, 122, 0.93);
     position: relative;
     border-radius: 5px 0 0 5px;
     height: 100%;
-    box-shadow: #3d3c2e;
+    box-shadow: #4d3737;
     box-sizing: border-box;
 }
 
 .Header {
     width: 100%;
     height: 20%;
-    background-color: #3f5d07;
+    background-color: rgba(131, 115, 91, 0.93);
 }
 
 .Header > a {
     text-align: center;
-    text-decoration: black;
+    text-decoration: rgba(58, 46, 32, 0.93);
     width: 50px;
     height: 40px;
 }
@@ -33,5 +33,5 @@
 
 .Menu:hover {
     cursor: pointer;
-    background-color: grey;
+    background-color: rgba(133, 117, 88, 0.93);
 }
